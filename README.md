@@ -13,6 +13,7 @@ Search the top cryptocurrencies by market capitalization!
 
 - axios
 - node-sass
+- phosphor-react
 
 ### APIs
 

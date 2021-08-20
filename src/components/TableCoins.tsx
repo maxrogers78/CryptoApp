@@ -23,7 +23,7 @@ const TableCoins = ({ coins, search }: Props) => {
 
   return (
     <>
-      <table className="table table-dark mt-4 table-hover">
+      <table id="table" className="table table-dark mt-4 table-hover">
         <thead>
           <tr>
             {titles.map((title, idx) => (
