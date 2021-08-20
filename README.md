@@ -6,10 +6,13 @@ Search the top cryptocurrencies by market capitalization!
 
 - React.js
 - Typescript
+- Bootstrap
+- SASS / SCSS
 
 ### External modules
 
-- Axios
+- axios
+- node-sass
 
 ### APIs
 
