@@ -25,13 +25,11 @@ const App = () => {
 
   const toggleMode = () => {
     const body = document.body;
-    const h1 = document.getElementById("h1");
     const table = document.getElementById("table");
     const search = document.getElementById("search");
 
-    if (body && h1 && table && search) {
+    if (body && table && search) {
       body.classList.toggle("light-mode");
-      h1.classList.toggle("light-mode");
 
       if (table.classList.contains("table-dark")) {
         table.classList.remove("table-dark");
@@ -63,9 +61,16 @@ const App = () => {
   return (
     <div className="contenido container py-3">
       <div className="row">
-        <h1 id="h1" className="text-center my-4">
-          CryptoApp
-        </h1>
+        {darkMode ? (
+          <img
+            src="/logo_white.png"
+            alt="logo"
+            className="logo img-fluid py-5"
+          />
+        ) : (
+          <img src="/favicon.svg" alt="logo" className="logo img-fluid py-5" />
+        )}
+
         <button onClick={toggleMode} className="toggle">
           {darkMode ? <Sun /> : <Moon className="dark" />}
         </button>
